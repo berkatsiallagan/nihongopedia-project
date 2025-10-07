@@ -269,17 +269,6 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
   <!-- JavaScript Modules -->
-  <script type="module" src="/assets/js/main.js"></script>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      fetch("/components/header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.querySelector("header").innerHTML = data;
-        })
-        .catch(error => console.error("Error loading header:", error));
-    });
-  </script>
+  <script type="module" src="../nihongopedia-project/assets/js/main.js"></script>
 </body>
 </html>
