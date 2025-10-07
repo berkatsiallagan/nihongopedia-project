@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nihongopedia - Platform pembelajaran bahasa Jepang gratis dengan materi lengkap, kuis interaktif, dan audio pelafalan native.">
+  <meta name="keywords" content="belajar bahasa jepang, kursus jepang gratis, nihongo, hiragana, katakana">
+  <meta name="author" content="Nihongopedia">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nihongopedia - Belajar Bahasa Jepang Gratis">
+  <meta property="og:description" content="Platform pembelajaran bahasa Jepang lengkap dengan kuis dan audio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nihongopedia.com">
+  <meta property="og:image" content="/assets/img/og-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Tailwind CSS CDN (untuk development) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'red-primary': '#C8102E',
+            'red-secondary': '#E53935',
+            'red-accent': '#FF5A5F',
+            'white-primary': '#FFFFFF',
+            'white-secondary': '#F7F7F7',
+            'gray-light': '#DADADA',
+            'gray-dark': '#333333',
+            'neutral-black': '#000000',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <title>Nihongopedia - Belajar Bahasa Jepang Gratis</title>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Nihongopedia",
+    "description": "Platform pembelajaran bahasa Jepang gratis",
+    "url": "https://nihongopedia.com",
+    "logo": "https://nihongopedia.com/assets/img/logo.png",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <!-- Header Component -->
+  <header></header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-red-primary via-red-secondary to-red-accent text-white">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-20 w-48 h-48 bg-white rounded-full blur-3xl"></div>
+      </div>
+      
+      <div class="container mx-auto px-4 py-20 md:py-32 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="mb-8 animate-fade-in">
+            <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4">
+              🎌 Platform Pembelajaran Terpercaya
+            </span>
+          </div>
+          
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slide-up" id="hero-title">
+            Belajar Bahasa Jepang
+            <span class="block text-white/90">Jadi Lebih Mudah</span>
+          </h1>
+          
+          <p class="text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.2s;">
+            Kuasai bahasa Jepang dengan materi terstruktur, kuis interaktif, dan audio pelafalan native speaker
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.4s;">
+            <a href="#categories" class="btn btn-primary bg-white text-red-primary hover:bg-white-secondary w-full sm:w-auto">
+              Mulai Belajar Sekarang
+            </a>
+            <a href="/pages/about.html" class="btn btn-secondary border-white text-white hover:bg-white/10 w-full sm:w-auto">
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
+            <div class="text-center">
+              <div class="text-4xl font-bold mb-2">500+</div>
+              <div class="text-white/80 text-sm">Materi Belajar</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold mb-2">1000+</div>
+              <div class="text-white/80 text-sm">Kuis Soal</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold mb-2">100%</div>
+              <div class="text-white/80 text-sm">Gratis</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="absolute bottom-0 left-0 w-full">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+          <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F7F7F7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white-secondary">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-dark">
+            Kenapa Pilih <span class="text-gradient-red">Nihongopedia</span>?
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Platform pembelajaran dirancang khusus untuk pelajar Indonesia dengan fitur lengkap dan mudah digunakan
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="card card-interactive text-center">
+            <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-red-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-dark">Materi Terstruktur</h3>
+            <p class="text-gray-600">
+              Pembelajaran bertahap dari dasar hingga mahir dengan kurikulum yang terorganisir dengan baik
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="card card-interactive text-center">
+            <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-red-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-dark">Audio Native</h3>
+            <p class="text-gray-600">
+              Dengarkan pelafalan asli dari native speaker Jepang untuk mempertajam listening skill
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="card card-interactive text-center">
+            <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-red-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-dark">Kuis Interaktif</h3>
+            <p class="text-gray-600">
+              Uji pemahaman Anda dengan kuis interaktif dan dapatkan feedback langsung
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="card card-interactive text-center">
+            <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-red-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-dark">Responsif</h3>
+            <p class="text-gray-600">
+              Belajar kapan saja, di mana saja dari smartphone, tablet, atau desktop Anda
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="card card-interactive text-center">
+            <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-red-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-dark">Performa Cepat</h3>
+            <p class="text-gray-600">
+              Teknologi modern untuk loading cepat dan pengalaman belajar yang smooth
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="card card-interactive text-center">
+            <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-red-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-dark">100% Gratis</h3>
+            <p class="text-gray-600">
+              Semua materi dan fitur tersedia gratis tanpa biaya berlangganan
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-dark">
+            Mulai <span class="text-gradient-red">Belajar Sekarang</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Pilih kategori pembelajaran sesuai level dan kebutuhan Anda
+          </p>
+        </div>
+
+        <!-- Skeleton Loader -->
+        <div id="categories-loader" class="animate-pulse grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="h-48 bg-gray-200 rounded-xl"></div>
+          <div class="h-48 bg-gray-200 rounded-xl"></div>
+          <div class="h-48 bg-gray-200 rounded-xl"></div>
+          <div class="h-48 bg-gray-200 rounded-xl"></div>
+          <div class="h-48 bg-gray-200 rounded-xl"></div>
+          <div class="h-48 bg-gray-200 rounded-xl"></div>
+        </div>
+
+        <!-- Categories Grid (akan diisi oleh JavaScript) -->
+        <div id="categories-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+          <!-- Dynamic content -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-red-primary to-red-secondary text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Siap Memulai Perjalanan Belajar?
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto text-white/90">
+          Bergabunglah dengan ribuan pelajar lainnya dan kuasai bahasa Jepang hari ini
+        </p>
+        <a href="#categories" class="btn btn-primary bg-white text-red-primary hover:bg-white-secondary inline-block">
+          Mulai Belajar Gratis
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer></footer>
+
+  <!-- External Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- JavaScript Modules -->
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

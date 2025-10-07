@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables - 8 Golden Schneider Palette */
+:root {
+  --red-primary: #C8102E;
+  --red-secondary: #E53935;
+  --red-accent: #FF5A5F;
+  --white-primary: #FFFFFF;
+  --white-secondary: #F7F7F7;
+  --gray-light: #DADADA;
+  --gray-dark: #333333;
+  --neutral-black: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-white-secondary text-gray-dark;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  h1 { @apply text-4xl md:text-5xl font-bold; }
+  h2 { @apply text-3xl md:text-4xl font-bold; }
+  h3 { @apply text-2xl md:text-3xl font-semibold; }
+  h4 { @apply text-xl md:text-2xl font-semibold; }
+}
+
+@layer components {
+  /* Navigation Links */
+  .nav-link {
+    @apply text-gray-dark hover:text-red-primary transition-colors font-medium relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-red-primary transition-all;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .mobile-nav-link {
+    @apply block px-4 py-2 rounded-lg hover:bg-red-50 hover:text-red-primary transition-colors;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-red-primary text-white hover:bg-red-secondary shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-red-primary border-2 border-red-primary hover:bg-red-50;
+  }
+
+  .btn-outline {
+    @apply border-2 border-gray-light text-gray-dark hover:border-red-primary hover:text-red-primary;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6;
+  }
+
+  .card-interactive {
+    @apply cursor-pointer transform hover:-translate-y-1 transition-all;
+  }
+
+  /* Japanese Text */
+  .japanese-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    @apply text-2xl md:text-3xl;
+  }
+
+  /* Container */
+  .container {
+    @apply max-w-7xl;
+  }
+
+  /* Audio Player */
+  .audio-player {
+    @apply flex items-center gap-4 bg-white-secondary rounded-lg p-4;
+  }
+
+  .audio-btn {
+    @apply w-12 h-12 rounded-full bg-red-primary text-white flex items-center justify-center hover:bg-red-secondary transition-colors;
+  }
+
+  /* Quiz */
+  .quiz-option {
+    @apply w-full text-left p-4 rounded-lg border-2 border-gray-light hover:border-red-primary hover:bg-red-50 transition-all;
+  }
+
+  .quiz-option.correct {
+    @apply border-green-500 bg-green-50;
+  }
+
+  .quiz-option.incorrect {
+    @apply border-red-500 bg-red-50;
+  }
+
+  /* Admin Table */
+  .admin-table {
+    @apply w-full border-collapse bg-white rounded-lg overflow-hidden shadow;
+  }
+
+  .admin-table th {
+    @apply bg-red-primary text-white p-4 text-left font-semibold;
+  }
+
+  .admin-table td {
+    @apply p-4 border-b border-gray-200;
+  }
+
+  .admin-table tr:hover {
+    @apply bg-gray-50;
+  }
+}
+
+@layer utilities {
+  /* Text Gradients */
+  .text-gradient-red {
+    @apply bg-gradient-to-r from-red-primary to-red-accent bg-clip-text text-transparent;
+  }
+
+  /* Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--red-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red-secondary);
+}

@@ -1,0 +1,36 @@
+<header class="bg-white shadow-md sticky top-0 z-50 border-b-2 border-red-primary">
+    <div class="container mx-auto px-4">
+      <nav class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-gradient-to-br from-red-primary to-red-secondary rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
+            <span class="text-white font-bold text-xl">日</span>
+          </div>
+          <span class="font-bold text-xl text-gray-dark hidden sm:block">Nihongopedia</span>
+        </a>
+  
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center gap-8">
+          <li><a href="/" class="nav-link">Beranda</a></li>
+          <li><a href="/pages/about.html" class="nav-link">Tentang</a></li>
+          <li><a href="/pages/donate.html" class="nav-link">Donasi</a></li>
+        </ul>
+  
+        <!-- Mobile Toggle -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </nav>
+  
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <ul class="flex flex-col gap-2">
+          <li><a href="/" class="mobile-nav-link">Beranda</a></li>
+          <li><a href="/pages/about.html" class="mobile-nav-link">Tentang</a></li>
+          <li><a href="/pages/donate.html" class="mobile-nav-link">Donasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
